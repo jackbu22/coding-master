@@ -17,12 +17,10 @@ def solve():
         else:
             Z.sort()
             if Z[0]**2+Z[1]**2 == Z[2]**2:
-                result.append("Right")
+                print("Right")
             else:
-                result.append('Wrong')
-
-
-    print(result)
+                print("Wrong")
+            
 
 if __name__ == "__main__":                              
     solve()
