@@ -29,4 +29,3 @@ print("{}\n{} {}".format(shirts,pencil_bundle,pencil_single))
 
 
             
-
