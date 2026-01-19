@@ -1,4 +1,5 @@
 import sys
+input = sys.stdin.readline
 
 n = int(input())
 
@@ -9,4 +10,5 @@ for i in range(n):
 
 dots.sort(key=lambda x: (x[0], x[1]))
 
-print(dots)
+for dot in dots:
+    print(dot[0], dot[1])
