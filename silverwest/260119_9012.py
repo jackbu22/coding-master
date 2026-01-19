@@ -7,10 +7,10 @@ for i in range(n):
     ghs = list(input().strip())
     stack = []
     for gh in ghs:
-        stack.append(gh)
-        if gh == ')':
-            if len(stack) >= 2 and stack[-2] == '(':
-                stack.pop()
+        if gh == '(':
+            stack.append(gh)
+        else:
+            if len(stack) >= 1 and stack[-1] == '(':
                 stack.pop()
             else:
                 stack.append(gh)
