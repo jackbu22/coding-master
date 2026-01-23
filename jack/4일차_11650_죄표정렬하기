@@ -6,7 +6,6 @@ q_1=[]
 all=[]
 for i in range(count):
     q= tuple(map(int,input().split()))
-
     q_1.append(q)
 # print(q_1)
 q_1.sort()
