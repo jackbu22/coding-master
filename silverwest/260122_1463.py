@@ -1,20 +1,16 @@
-# import sys
-# input = sys.stdin.readline
+import sys
+input = sys.stdin.readline
 
-# n = int(input())
+n = int(input())
 
-# cnt = 0
+cnt_list = [0] * 1000001
 
-# while True:
-#     if n == 1:
-#         print(cnt)
-#         break
-#     elif n % 3 == 0:
-#         cnt += 1
-#         n = n // 3 
-#     elif n % 2 == 0:
-#         cnt += 1
-#         n = n // 2
-#     else:
-#         cnt += 1
-#         n = n - 1
+
+for i in range(2, n + 1):
+    cnt_list[i] = cnt_list[i - 1] + 1
+    if i % 2 == 0:
+        cnt_list[i] = min(cnt_list[i], cnt_list[i // 2] + 1)
+    if i % 3 == 0:
+        cnt_list[i] = min(cnt_list[i], cnt_list[i // 3] + 1)
+
+print(cnt_list[n])
