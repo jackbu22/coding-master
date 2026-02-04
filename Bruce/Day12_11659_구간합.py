@@ -14,6 +14,7 @@ def solve():
     for i in range(M):
         start, end = list(map(int, input().split()))
         print(accumulation[end]-accumulation[start-1])
+    
 
 
 
