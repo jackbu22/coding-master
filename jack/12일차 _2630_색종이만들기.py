@@ -56,6 +56,7 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
+p=[]
 for i in range(n):
     line = input().split()
     numbers = list(map(int, line))
