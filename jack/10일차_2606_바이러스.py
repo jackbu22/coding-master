@@ -15,7 +15,7 @@ for i in range(int(w)):
     a=list(map(int,input().split()))
     a.sort()
     m.append(a)
-
+ 
 m.sort()
 
 if w==0:
@@ -30,7 +30,7 @@ else:
     p=0 #쓰레기값
     k=1
     while k==1:
-        k=0# 이걸 왜 쳐하시냐면 이걸해야 지워졌을때 다시 보게 해서 지우려고. 순서대로 지우면 안쳐지워지는것도 있으니깐
+        k=0#  이걸 왜 쳐하시냐면 이걸해야 지워졌을때 다시 보게 해서 지우려고. 순서대로 지우면 안쳐지워지는것도 있으니깐
         for i in range(1,int(w)):
             e=m[i][0]
             r=m[i][1]

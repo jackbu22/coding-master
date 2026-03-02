@@ -20,7 +20,7 @@ elif lines!=0:
             q.add(b)
         elif (a not in q) and (b not in q):
             w.append((a,b))
-    # print(w)
+    #  print(w)
 
     changed = True
     while changed:

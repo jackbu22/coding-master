@@ -66,7 +66,7 @@ w = 0
 b = 0
 e=0
 def f(x, y, n):
-    global w,b,p #재귀함수에서 변수가 계속 0으로 변경 안되게 하는건데 
+    global w,b,p # 재귀함수에서 변수가 계속 0으로 변경 안되게 하는건데 
     a = p[x][y]
     # print(a)
     # print(w)

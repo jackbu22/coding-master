@@ -8,5 +8,6 @@ for i in range(3,1001):
     q[i]=q[i-1]+q[i-2]
 number=input().strip()
 number=int(number)
-print(q[number]%10007)# 문제좀 읽자
+print(q[number]%10007)#  문제좀 읽자
 
+ 
