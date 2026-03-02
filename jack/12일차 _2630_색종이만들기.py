@@ -56,7 +56,10 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
-p = [list(map(int, input().split())) for i in range(n)]
+for i in range(n):
+    line = input().split()
+    numbers = list(map(int, line))
+    p.append(numbers)
 
 w = 0
 b = 0
