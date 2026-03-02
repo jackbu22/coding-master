@@ -56,7 +56,7 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
-p = [list(map(int, input().split())) for _ in range(n)]
+p = [list(map(int, input().split())) for i in range(n)]
 
 w = 0
 b = 0
