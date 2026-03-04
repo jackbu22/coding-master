@@ -11,10 +11,10 @@
 import sys
 input= sys.stdin.readline
 total=input().strip()
-
+ 
 for p in range(int(total)):
     m,n,k=map(int,input().split())
-    # m=10   n=6   k=14
+    #  m=10   n=6   k=14
 
     m=int(m)
     n=int(n)
